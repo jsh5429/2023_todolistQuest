@@ -32,10 +32,17 @@ function todoAdd(e){
     check.addEventListener("click", todoCheck);
     button.addEventListener("click", todoDelete);
 
+    //const checkboxNumber = document.querySelectorAll("#todolist>li>input[type='checkbox']");
+    //const checkedBox = document.querySelectorAll("#todolist>li>input[type='checkbox']:checked");
+    //done.innerHTML = `전체 할일 ${checkboxNumber.length} | 완료한 할일 ${checkedBox.length}`;
+
+    count();
+}
+
+function count(){
     const checkboxNumber = document.querySelectorAll("#todolist>li>input[type='checkbox']");
     const checkedBox = document.querySelectorAll("#todolist>li>input[type='checkbox']:checked");
     done.innerHTML = `전체 할일 ${checkboxNumber.length} | 완료한 할일 ${checkedBox.length}`;
-
 }
 
 function todoCheck(e){
@@ -60,7 +67,8 @@ function todoDelete(e){
     const li = button.parentNode;
     li.remove();
     // 제거 한 후의 상태 값을 가져와야 하기에 remove() 다음에 변수를 호출해야한다.
-    const checkboxNumber = document.querySelectorAll("#todolist>li>input[type='checkbox']");
-    const checkedBox = document.querySelectorAll("#todolist>li>input[type='checkbox']:checked");
-    done.innerHTML = `전체 할일 ${checkboxNumber.length} | 완료한 할일 ${checkedBox.length}`;
+    //const checkboxNumber = document.querySelectorAll("#todolist>li>input[type='checkbox']");
+    //const checkedBox = document.querySelectorAll("#todolist>li>input[type='checkbox']:checked");
+    //done.innerHTML = `전체 할일 ${checkboxNumber.length} | 완료한 할일 ${checkedBox.length}`;
+    count();
 }
