@@ -9,24 +9,20 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <!-- 시계 -->
+    
     <h1 id = "clock">00:00:00</h1>
-    <!-- 로그인 입력창 : 로그인 후 보이지않음-->
     <form action="" id="login-form">
-        <input id="login-id" type="text">
+        <input id="login-id" type="text" placeholder="닉네임">
         <input id="login-button" type="submit" value="Login">
     </form>
-    <!-- 인사 : 로그인 후에 보임 -->
-    <h1 id="greeting" class="hidden">환영합니다</h1>
+    <h1 id="greeting" class="hidden">Welcome</h1>
+    <h3 id="listtitle" class="hidden">Todolist</h3>
 
-    <!-- 할일 입력 -->
     <form action="" id="todo-form" class="hidden">
         <input type="text" placeholder="투두를 입력해주세요">
         <input type="submit" value="추가">
     </form>
-    <h3 id="done" class="hidden">전체 할일/완료한 할일</h3>
-
-    <!-- 할일 리스트가 입력될 공간 -->
+    <div id="tododone" class="hidden">전체 할일 0 | 완료한 할일 0</div>
     <ul id="todolist" class="hidden">
     </ul>
 
