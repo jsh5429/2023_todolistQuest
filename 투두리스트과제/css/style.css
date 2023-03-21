@@ -1,0 +1,105 @@
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'KCCChassam';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 태그에 대한 디자인*/
+h1{
+    font-size: 2rem;
+    font-family: 'TheJamsil5Bold';
+    margin: 10px 0;
+    color: white;
+}
+
+h3{
+    text-align: center;
+    margin: 20px;
+    font-family: 'KCCChassam';
+}
+
+/*todolist 디자인*/
+#todolist {
+    margin: auto; /*중앙정렬*/
+    max-width: 400px;
+    margin-top: 20px;
+    padding: 0 30px;
+}
+
+#todolist li{
+    font-family:'KCCChassam';
+    clear: both;
+    margin: 5px 0;
+}
+
+/* x버튼을 오른쪽에 깔끔하게 정렬 */
+#todolist li button{
+    float: right;
+    background-color: transparent;
+    border: solid black 1px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#todolist li span{
+    margin-top: 7px;
+    font-size: 0.7rem;
+} 
+
+
+/* input[type="text"], [type="submit"]*/
+input[type="text"]{
+    /*배경을 투명하게*/
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px white solid;
+    color: white;
+}
+
+input[type="text"]{
+    outline: none;
+}
+
+input[type="text"]::placeholder{
+    color: rgba(255,255,255,0.7);
+}
+
+/*버튼 디자인*/
+input[type="text"]+input[type="submit"]{
+    background-color: lightgray;
+    border: none;
+    border-radius: 20px;
+    padding: 3px 7px;
+    color: black;
+}
+
+/* 버튼에 마우스를 올렸을 때 */
+input[type="text"]+input[type="submit"]:hover{
+    background-color: darkslategray;
+    color: white;
+}
+
+/*태그를 숨기기 위한 클래스*/
+.hidden {
+    display: none;
+}
+
+/* 각각 id에 따른 디자인 */
+#clock{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 30px 0;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+#greeting, #login-form, #todo-form{
+    text-align: center;
+}
